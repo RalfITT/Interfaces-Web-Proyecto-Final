@@ -1,0 +1,54 @@
+.mySwiper {
+  width: 100%;
+  height: 700px; /* Valor por defecto */
+}
+
+.mySwiper2 {
+  width: 100%;
+  height: 100%;
+  position: relative; /* Asegura que la posición sea relativa */
+  padding: 20px 0 25px 0;
+}
+
+.mySwiper2 .swiper-pagination {
+  bottom: 0; /* Coloca la paginación al fondo */
+  position: absolute; /* Permite mover la paginación libremente */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 900px) {
+  .mySwiper {
+    height: 600px; /* Ajusta la altura en pantallas más pequeñas */
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Estilo para la paginación en general */
+.mySwiper .swiper-pagination-bullet {
+  background-color: #ccc; /* Color predeterminado para los bullets */
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el punto activo */
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #f9faf9; /* Color verde para el punto activo */
+  opacity: 1; /* Aumenta la opacidad para resaltarlo */
+}
